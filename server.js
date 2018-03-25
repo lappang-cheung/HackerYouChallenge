@@ -25,4 +25,12 @@ app.get('/list', (req,res) => {
     });
 });
 
+// For getting beer product from id
+app.get('/beer/:id', (req,res) => {
+    let id = req.params.id;
+    request(`${BASE_PROD_URL}/${id}?access_key=${API_KEY}`,(error, response, body) => {
+        res.send(body);
+    });
+});
+
 app.listen(PORT, () => console.log(`Listening to port ${PORT}`));
