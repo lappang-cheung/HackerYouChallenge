@@ -10,8 +10,8 @@
     "concurrently": "^3.5.0"
   },
   "scripts": {
-    "client": "cd lient && yarn start",
+    "client": "cd client && yarn start",
     "server": "nodemon server.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\"\"yarn client\""
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
   }
 }
