@@ -4,6 +4,7 @@
 
     &__left
     {
+        padding: 4rem 0;
         p
         {
             text-align: center;
@@ -44,3 +45,33 @@
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .product
+    {
+        &__right
+        {
+            padding: 1rem 0;
+
+            &--title
+            {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            &--paragraph
+            {
+                font-size: 1.3rem;
+                text-align: center;
+            }
+
+            &--list
+            {
+                .items
+                {
+                    padding-left: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
