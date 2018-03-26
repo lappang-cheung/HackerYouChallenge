@@ -33,4 +33,17 @@ app.get('/beer/:id', (req,res) => {
     });
 });
 
+// Getting store data
+app.get('/beer/store/:product_id', (req,res) => {
+    let product_id = req.params.product_id;
+    request(`${BASE_STORE_URL}?product_id=${product_id}&access_key=${API_KEY}`,(error, response, body) => {
+        res.send(body);
+    });
+});
+
+// Set the app path
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/client/public/index.html'));
+});
+
 app.listen(PORT, () => console.log(`Listening to port ${PORT}`));
