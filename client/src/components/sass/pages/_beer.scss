@@ -4,10 +4,17 @@
 
     &__left
     {
+        p
+        {
+            text-align: center;
+        }
+
         &--image
         {
-            float: right;
-            height: 130%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            height: 100%;
         }
     }
 

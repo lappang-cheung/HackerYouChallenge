@@ -64,9 +64,13 @@ p {
 
 .product {
   padding: 3rem; }
+  .product__left p {
+    text-align: center; }
   .product__left--image {
-    float: right;
-    height: 130%; }
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 100%; }
   .product__right--title {
     font-size: 4rem;
     color: #a4baba; }
