@@ -21,12 +21,30 @@ class List extends Component
         });
     }
 
+    items = () => {
+        return(
+            this.state.beers.map(
+                beer => {
+                    return(
+                        <ListItem 
+                            selectBeer = {() => this.selectBeer(beer)}
+                            key = {beer.product_no}
+                            beer= {beer}
+                        />
+                    )
+                }
+            )
+        )
+    }
+
     render()
     {
         return(
-            <div>
+            <div className="list">
                 <h1>This is the Beer List page</h1>
-                <ListItem />
+                <ul className="list__beer">
+                    {this.items()}
+                </ul>
             </div>
         )
     }
