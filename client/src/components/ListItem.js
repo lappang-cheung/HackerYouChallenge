@@ -31,7 +31,7 @@ const ListItem = ({ beer, selectBeer }) => {
             <li className="list__beer--item">
                 <Link to={`/beer/${id}`}>
                     <div className="image">
-                        <img className="beer-img" src={img_url}/>
+                        <img className="beer-img" src={img_url} alt={name}/>
                         <p>{name}</p>
                     </div>
                 </Link>

@@ -11,7 +11,7 @@ class Page extends Component{
     }
 
     componentWillMount(){
-        const domain = process.env.REACT_APP_DOMAIN || 'localhost:8080'
+
         let id = this.props.match.params.id;
         
         axios.get(`/beer/store/${id}`).then((res) => {
@@ -29,10 +29,10 @@ class Page extends Component{
         return(
             <div>
                 <h1>{this.state.beer.name}</h1>
-                <img src={this.state.beer.image_thumb_url} />
+                <img src={this.state.beer.image_thumb_url} alt={this.state.beer.name}/>
                 <p>Available in these store:</p>
                 <ul>
-                    {this.state.stores.map((store) => {return <li>{store.name}</li>}) }
+                    {this.state.stores.map((store) => {return <li key={store.name}>{store.name}</li>}) }
                 </ul>
             </div>
         )

@@ -7,7 +7,6 @@ import Page from './Page';
 const Main = () => {
     return (
         <div>
-            <h1>Hello World</h1>
             <BrowserRouter>
                 <Switch>
                     <Route path="/" exact component={List} />
