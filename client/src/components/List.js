@@ -41,8 +41,8 @@ class List extends Component
     {
         return(
             <div className="list">
-                <h1>This is the Beer List page</h1>
-                <ul className="list__beer">
+                <h1 className="list__heading">Beau's Seasonal</h1>
+                <ul className="list__beer row">
                     {this.items()}
                 </ul>
             </div>

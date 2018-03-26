@@ -13,31 +13,26 @@ const ListItem = ({ beer, selectBeer }) => {
     if(img_url == null)
     {
         return(
-            <li className="list__beer--item">
+            <li className="list__beer--item col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <Link to={`/beer/${id}`}>
                     <div className="no-image">
-                        <p>{name}</p>
+                       
                     </div>
                 </Link>
-                <p>{tertiaryCategory}</p>
-                <p>{style}</p>
-                <p>{varietal}</p>
+                <p>{name}</p>
             </li>
         )
     }
     else
     {
         return(
-            <li className="list__beer--item">
+            <li className="list__beer--item col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <Link to={`/beer/${id}`}>
                     <div className="image">
                         <img className="beer-img" src={img_url} alt={name}/>
-                        <p>{name}</p>
                     </div>
                 </Link>
-                <p>{tertiaryCategory}</p>
-                <p>{style}</p>
-                <p>{varietal}</p>
+                <p>{name} </p>
             </li>
         )
     }

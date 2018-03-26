@@ -1,0 +1,33 @@
+.list
+{
+    padding: 2rem;
+
+    &__heading
+    {
+        text-align: center;
+        font-size: 5rem;
+        letter-spacing: .4rem;
+    }
+
+    &__beer
+    {
+        padding: 3rem 0;
+
+        &--item
+        {
+            list-style: none;
+        }
+
+        .image
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p
+        {
+            text-align: center;
+        }
+    }
+}
