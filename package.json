@@ -25,6 +25,8 @@
   },
   "scripts": {
     "client": "cd client && yarn start",
+    "install-client": "cd client && yarn install",
+    "install-server": "yarn install",
     "server": "nodemon server.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "compile": "node-sass client/src/components/sass/App.scss client/src/App.css -w"
