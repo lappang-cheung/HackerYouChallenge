@@ -16,18 +16,27 @@
         &--item
         {
             list-style: none;
+            &:not(:last-child){
+                padding-bottom: 3rem;
+            }
         }
 
-        .image
+        .image, .no-image
         {
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
+        .beer-img
+        {
+            height: 24rem;
+        }
+
         p
         {
             text-align: center;
+            font-size: 1.4rem;
         }
     }
 }

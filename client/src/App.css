@@ -30,9 +30,14 @@ p {
     padding: 3rem 0; }
     .list__beer--item {
       list-style: none; }
-    .list__beer .image {
+      .list__beer--item:not(:last-child) {
+        padding-bottom: 3rem; }
+    .list__beer .image, .list__beer .no-image {
       display: flex;
       justify-content: center;
       align-items: center; }
+    .list__beer .beer-img {
+      height: 24rem; }
     .list__beer p {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.4rem; }
