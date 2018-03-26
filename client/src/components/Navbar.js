@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-// The nav bar
+// The navbar
 const Navbar = () => {
     return(
         <nav className="navbar">
