@@ -41,3 +41,17 @@ p {
     .list__beer p {
       text-align: center;
       font-size: 1.4rem; }
+
+.product {
+  padding: 3rem; }
+  .product__left--image {
+    float: right;
+    height: 130%; }
+  .product__right--title {
+    font-size: 4rem; }
+  .product__right--paragraph {
+    font-size: 2rem; }
+  .product__right--list .items {
+    list-style: none;
+    padding-left: 3rem;
+    padding-top: 1rem; }

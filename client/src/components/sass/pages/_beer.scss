@@ -1,0 +1,37 @@
+.product
+{
+    padding: 3rem;
+
+    &__left
+    {
+        &--image
+        {
+            float: right;
+            height: 130%;
+        }
+    }
+
+    &__right
+    {
+        &--title
+        {
+            font-size: 4rem;
+        }
+
+        &--paragraph
+        {
+            font-size: 2rem;
+        }
+
+        &--list
+        {
+            .items
+            {
+                list-style: none;
+                padding-left: 3rem;
+                padding-top: 1rem;
+            }
+        }
+    }
+}
+

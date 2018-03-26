@@ -27,13 +27,13 @@ class Page extends Component{
 
     render(){
         return(
-            <div className="product">
-                <div className="product__left">
+            <div className="product row">
+                <div className="product__left col-lg-6 col-md-6">
                     <img className="product__left--image" src={this.state.beer.image_thumb_url} alt={this.state.beer.name}/>
                 </div>
-                <div className="product__right">    
+                <div className="product__right col-lg-6 col-md-6">    
                     <h1 className="product__right--title">{this.state.beer.name}</h1>
-                    <p className="product__right--paragrph">Available in these store:</p>
+                    <p className="product__right--paragraph">Available in these store:</p>
                     <ul className="product__right--list">
                         {this.state.stores.map((store) => {
                             return <li className="items" key={store.name}>{store.name}</li>})
