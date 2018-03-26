@@ -20,12 +20,31 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: 'Open sans', sans-serif; }
 
+.navbar {
+  display: flex;
+  padding: 2rem 0;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right bottom, rgba(245, 223, 189, 0.3), rgba(196, 160, 119, 0.4)); }
+  .navbar__logo {
+    padding: 0 1rem; }
+    .navbar__logo img {
+      height: 4rem; }
+  .navbar__header {
+    font-size: 3rem;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center; }
+  .navbar a {
+    text-decoration: none;
+    color: #a4baba; }
+
 .list {
   padding: 2rem; }
   .list__heading {
     text-align: center;
     font-size: 5rem;
-    letter-spacing: .4rem; }
+    letter-spacing: .4rem;
+    color: #512b1b; }
   .list__beer {
     padding: 3rem 0; }
     .list__beer--item {
@@ -40,7 +59,8 @@ p {
       height: 24rem; }
     .list__beer p {
       text-align: center;
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      color: #a4baba; }
 
 .product {
   padding: 3rem; }
@@ -48,10 +68,12 @@ p {
     float: right;
     height: 130%; }
   .product__right--title {
-    font-size: 4rem; }
+    font-size: 4rem;
+    color: #a4baba; }
   .product__right--paragraph {
     font-size: 2rem; }
   .product__right--list .items {
     list-style: none;
     padding-left: 3rem;
-    padding-top: 1rem; }
+    padding-top: 1rem;
+    color: #c4a077; }

@@ -26,6 +26,12 @@ class Page extends Component{
     }
 
     render(){
+
+        if(this.state.beer.image_thumb_url == null)
+        {
+            this.state.beer.image_thumb_url = "https://dx5vpyka4lqst.cloudfront.net/products/458331/images/thumb.png";
+        }
+
         return(
             <div className="product row">
                 <div className="product__left col-lg-6 col-md-6">

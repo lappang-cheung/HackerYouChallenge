@@ -5,9 +5,6 @@ const ListItem = ({ beer, selectBeer }) => {
 
     const img_url = beer.image_thumb_url;
     const name = beer.name;
-    const style = beer.style;
-    const varietal = beer.varietal;
-    const tertiaryCategory = beer.tertiaryCategory;
     const id = beer.id;
 
     if(img_url == null)
@@ -16,7 +13,7 @@ const ListItem = ({ beer, selectBeer }) => {
             <li className="list__beer--item col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <Link to={`/beer/${id}`}>
                     <div className="no-image">
-                       <img className="beer-img" src="https://image.flaticon.com/icons/svg/75/75734.svg" alt="empty bottle" />
+                       <img className="beer-img" src="https://dx5vpyka4lqst.cloudfront.net/products/458331/images/thumb.png" alt="empty bottle" />
                     </div>
                 </Link>
                 <p>{name}</p>
